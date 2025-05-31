@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestudium - Deutsche Aussprache</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <h1>Bestudium</h1>
+            <h2>Идеальное немецкое произношение</h2>
+            <p>Добро пожаловать в Bestudium, где точность встречает язык. Наши уроки помогут Вам овладеть немецким произношением, превращая уроки в увлекательный процесс.</p>
+            <p style="margin-top: 3rem; font-weight: 500;">Создатель: Фионова Анна</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="features">
+            <div class="feature-card" onclick="toggleSection('laute')">
+                <i class="fas fa-headphones-alt"></i>
+                <h3>Laute</h3>
+                <p>Таблица звуков с примерами</p>
+            </div>
+            <div class="feature-card" onclick="toggleSection('videos')">
+                <i class="fas fa-film"></i>
+                <h3>Videos</h3>
+                <p>Обучающие видеоуроки</p>
+            </div>
+            <div class="feature-card" onclick="toggleSection('uebungen')">
+                <i class="fas fa-pencil-alt"></i>
+                <h3>Übungen</h3>
+                <p>Практические упражнения</p>
+            </div>
+        </div>
+ <section id="laute" class="section hidden">
+            <div class="container">
+                <h1>Deutsche Laute</h1>
+               
+                <table>
+    <tr>
+        <th>Laut</th>
+        <th>Buchstaben</th>
+        <th>Beispiele</th>
+    </tr>
+    <tr><th colspan="3" style="background: var(--geometry); color: var(--accent);">Vokale</th></tr>
+    <tr><td>[a:]</td><td>a, aa, ah</td><td>sagen, Saal, fahren</td></tr>
+    <tr><td>[a]</td><td>a</td><td>wann, satt</td></tr>
+    <tr><td>[eː]</td><td>e, ee, eh</td><td>sehen, Tee, gehen</td></tr>
+    <tr><td>[ə]</td><td>e (безударные)</td><td>kommen, machen</td></tr>
+    <tr><td>[iː]</td><td>i, ie, ih</td><td>wir, ziehen, Liebe, ihn</td></tr>
+    <tr><td>[ɪ]</td><td>i</td><td>bitte, Kind</td></tr>
+    <tr><td>[oː]</td><td>o, oo, oh</td><td>wo, Boot, Kohl</td></tr>
+    <tr><td>[ɔ]</td><td>o</td><td>offen, Komma</td></tr>
+    <tr><td>[u:]</td><td>u, uh</td><td>Kur, Schuh</td></tr>
+    <tr><td>[ʊ]</td><td>u</td><td>Mund, Kurs</td></tr>
+    <tr><td>[ɛ:]</td><td>ä, äh</td><td>Bär, Mädchen, wählen</td></tr>
+    <tr><td>[ɛ]</td><td>e, ä</td><td>Bett, Wände</td></tr>
+    <tr><td>[øː]</td><td>ö, öh, eu</td><td>schön, Höhle, Kommandeur</td></tr>
+    <tr><td>[œ]</td><td>ö</td><td>öffnen</td></tr>
+    <tr><td>[y:]</td><td>ü, üh, y</td><td>für, Süden, Mühe, Analyse</td></tr>
+    <tr><td>[y]</td><td>ü, y</td><td>Stück, füllen, System</td></tr>
+
+    <tr><th colspan="3" style="background: var(--geometry); color: var(--accent);">Diphthonge</th></tr>
+    <tr><td>[ae]</td><td>ei, eih, ai, ay</td><td>nein, verleihen, Mai, Bayern</td></tr>
+    <tr><td>[ao]</td><td>au</td><td>aus, Auge</td></tr>
+    <tr><td>[ɔø]</td><td>eu, äu</td><td>neun, Räume</td></tr>
+
+    <tr><th colspan="3" style="background: var(--geometry); color: var(--accent);">Konsonanten</th></tr>
+    <tr><td>[t]</td><td>t, tt, th, dt, d</td><td>Tag, satt, Thema, Stadt, Bad</td></tr>
+    <tr><td>[d]</td><td>d</td><td>der,leider, Ordnung</td></tr>
+    <tr><td>[p]</td><td>p, pp, b</td><td>Park, Pappe, halb</td></tr>
+    <tr><td>[b]</td><td>b</td><td>Bein, aber</td></tr>
+    <tr><td>[k]</td><td>k, kk, c, ch, ck, g</td><td>Kuh, Akkusativ, Cafe, Charakter, nackt, Tag</td></tr>
+    <tr><td>[g]</td><td>g, gg</td><td>gut, Egge</td></tr>
+    <tr><td>[m]</td><td>m, mm</td><td>Maus, kommen</td></tr>
+    <tr><td>[n]</td><td>n, nn</td><td>Nacht, dann</td></tr>
+    <tr><td>[R]</td><td>r, rh</td><td>rot, kehren, Fahrrad</td></tr>
+    <tr><td>[ɐ]</td><td>er, r</td><td>verstehen, er, mir</td></tr>
+    <tr><td>[l]</td><td>l</td><td>Lampe, Schule</td></tr>
+    <tr><td>[f]</td><td>f, ff, v, ph, w</td><td>fahren, offen, Vater, Phonetik, Petrow</td></tr>
+    <tr><td>[v]</td><td>w, v</td><td>wann, November</td></tr>
+    <tr><td>[s]</td><td>s,ss, ß</td><td>ist, essen, Fuß</td></tr>
+    <tr><td>[z]</td><td>s</td><td>sagen, Rose</td></tr>
+    <tr><td>[ʃ]</td><td>sch, sp, st</td><td>Schule, Sport, Stadt</td></tr>
+    <tr><td>[h]</td><td>h</td><td>Heft, Hand</td></tr>
+    <tr><td>[x]</td><td>ch</td><td>machen, acht</td></tr>
+    <tr><td>[ç]</td><td>ch</td><td>Fächer, ich, richtig</td></tr>
+    <tr><td>[j]</td><td>j, y</td><td>Jahr, Yoga</td></tr>
+    <tr><td>[ʒ]</td><td>j, sh</td><td>Journal, Shukow</td></tr>
+    <tr><td>[ŋ]</td><td>ng в корне</td><td>lang</td></tr>
+    <tr><td>[tsi̯oːn]</td><td>-tion/-zion</td><td>Nation, Explosion</td></tr>
+    <tr><td>[kv]</td><td>qu</td><td>Quelle, Qual</td></tr>
+
+   
+    <tr><th colspan="3" style="background: var(--geometry); color: var(--accent);">Affrikaten</th></tr>
+    <tr><td>[pf]</td><td>pf</td><td>Apfel, Pferd</td></tr>
+    <tr><td>[ts]</td><td>z, tz</td><td>ganz, sitzen</td></tr>
+    <tr><td>[tʃ]</td><td>tsch</td><td>Deutsch</td></tr>
+
+</table>
+                <a class="button" href="#" onclick="hideAllSections(event)">Zurück</a>
+            </div>
+        </section>
+        <section id="videos" class="section hidden">
+  <div class="container">
+  
+    <h1 style="text-align: center; margin-bottom: 2rem;">Deutsche Videos</h1>
+
+    <div class="video-categories">
+  <div class="category">
+    <h2>Vokale</h2>
+    <button onclick="playTwoVideos('video-a.mp4', 'video-a1.mp4')">[a:]</button>
+    <button onclick="playTwoVideos('video-aa.mp4', 'video-aa1.mp4')">[a]</button>
+        <button onclick="playTwoVideos('video-ee.mp4', 'video-ee1.mp4')">[eː]</button>
+        <button onclick="playVideo('video-ə.mp4')">[ə]</button>
+        <button onclick="playVideo('video-ii.mp4')">[iː]</button>
+<button onclick="playVideo('video-i.mp4')">[ɪ]</button>
+<button onclick="playVideo('video-oo.mp4')">[oː]</button>
+<button onclick="playVideo('video-o.mp4')">[ɔ]</button>
+<button onclick="playVideo('video-uu.mp4')">[uː]</button>
+<button onclick="playVideo('video-u.mp4')">[ʊ]</button>
+<button onclick="playVideo('video-eee.mp4')">[ɛ:]</button>
+<button onclick="playVideo('video-e.mp4')">[ɛ]</button>
+<button onclick="playVideo('video-ooo.mp4')">[øː]</button>
+<button onclick="playVideo('video-oe.mp4')">[œ]</button>
+<button onclick="playVideo('video-yy.mp4')">[yː]</button>
+<button onclick="playVideo('video-y.mp4')">[y]</button>
+      </div>
+
+      <div class="category">
+        <h2>Diphthonge</h2>
+        <button onclick="playVideo('video-ae.mp4')">[ae]</button>
+        <button onclick="playVideo('video-ao.mp4')">[ao]</button>
+        <button onclick="playVideo('video-eu.mp4')">[ɔø]</button>
+      </div>
+
+      <div class="category">
+        <h2>Konsonanten</h2>
+        <button onclick="playVideo('video-t.mp4')">[t]</button>
+        <button onclick="playVideo('video-d.mp4')">[d]</button>
+        <button onclick="playVideo('video-p.mp4')">[p]</button>
+        <button onclick="playVideo('video-b.mp4')">[b]</button>
+<button onclick="playVideo('video-k.mp4')">[k]</button>
+<button onclick="playVideo('video-g.mp4')">[g]</button>
+<button onclick="playVideo('video-m.mp4')">[m]</button>
+<button onclick="playVideo('video-n.mp4')">[n]</button>
+<button onclick="playVideo('video-r.mp4')">[R]</button>
+<button onclick="playVideo('video-er.mp4')">[ɐ]</button>
+<button onclick="playVideo('video-l.mp4')">[l]</button>
+<button onclick="playVideo('video-f.mp4')">[f]</button>
+<button onclick="playVideo('video-v.mp4')">[v]</button>
+<button onclick="playVideo('video-s.mp4')">[s]</button>
+<button onclick="playVideo('video-z.mp4')">[z]</button>
+<button onclick="playVideo('video-sch.mp4')">[ʃ]</button>
+<button onclick="playVideo('video-h.mp4')">[h]</button>
+<button onclick="playVideo('video-x.mp4')">[x]</button>
+<button onclick="playVideo('video-c.mp4')">[ç]</button>
+<button onclick="playVideo('video-j.mp4')">[j]</button>
+<button onclick="playVideo('video-ʒ.mp4')">[ʒ]</button>
+<button onclick="playVideo('video-ŋ.mp4')">[ŋ]</button>
+<button onclick="playVideo('video-tsion.mp4')">[tsi̯oːn]</button>
+<button onclick="playVideo('video-kv.mp4')">[kv]</button>
+      </div>
+
+      <div class="category">
+        <h2>Affrikaten</h2>
+        <button onclick="playVideo('video-pf.mp4')">[pf]</button>
+        <button onclick="playVideo('video-ts.mp4')">[ts]</button>
+        <button onclick="playVideo('video-tsch.mp4')">[tʃ]</button>
+      </div>
+    </div>
+
+     <div class="dual-video-wrapper" id="dualVideoWrapper">
+      <video id="videoLeft" controls preload="none">
+  <source src="" type="video/mp4">
+  Dein Browser unterstützt das Video-Tag nicht.
+</video>
+
+<video id="videoRight" controls preload="none">
+  <source src="" type="video/mp4">
+  Dein Browser unterstützt das Video-Tag nicht.
+</video>
+</section>
+       
+        <section id="uebungen" class="section hidden">
+    <div class="container">
+        <!-- Список категорий -->
+        <div class="tasks-list visible" id="tasksList">
+            <h1>Übungen</h1>
+            <div class="category-list">
+              
+                <!-- Vokale -->
+  <div class="category-card" onclick="toggleSubgroup('vokale')">
+    <h3>Vokale</h3>
+  </div>
+
+  <!-- Diphthonge -->
+  <div class="category-card" onclick="toggleSubgroup('diphthonge')">
+    <h3>Diphthonge</h3>
+  </div>
+
+  <!-- Konsonanten -->
+  <div class="category-card" onclick="toggleSubgroup('konsonanten')">
+    <h3>Konsonanten</h3>
+  </div>
+
+  <!-- Affrikaten -->
+  <div class="category-card" onclick="toggleSubgroup('affrikaten')">
+    <h3>Affrikaten</h3>
+  </div>
+
+</div>       
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Vokale -->
+<div id="vokale-subgroup" class="category-list hidden">
+  <div class="category-card" onclick="toggleCategory('a')"><h3>[a:]-[a]</h3></div>
+  <div class="category-card" onclick="toggleCategory('b')"><h3>[ə]-[e:]</h3></div>
+  <div class="category-card" onclick="toggleCategory('c')"><h3>[ε:]-[ε]</h3></div>
+  <div class="category-card" onclick="toggleCategory('d')"><h3>[i:]-[i]</h3></div>
+  <div class="category-card" onclick="toggleCategory('e')"><h3>[o:]-[ɔ]</h3></div>
+  <div class="category-card" onclick="toggleCategory('f')"><h3>[u:]-[ʊ]</h3></div>
+  <div class="category-card" onclick="toggleCategory('g')"><h3>[y:]-[y]</h3></div>
+  <div class="category-card" onclick="toggleCategory('h')"><h3>[ø:]-[œ]</h3></div>
+</div>
+
+<!-- Diphthonge -->
+<div id="diphthonge-subgroup" class="category-list hidden">
+  <div class="category-card" onclick="toggleCategory('i')"><h3>[ae]-[ao]-[ɔø]</h3></div>
+</div>
+
+<!-- Konsonanten-->
+<div id="konsonanten-subgroup" class="category-list hidden">
+  <div class="category-card" onclick="toggleCategory('j')"><h3>[t]-[d]</h3></div>
+  <div class="category-card" onclick="toggleCategory('k')"><h3>[p]-[b]</h3></div>
+  <div class="category-card" onclick="toggleCategory('l')"><h3>[k]-[g]</h3></div>
+  <div class="category-card" onclick="toggleCategory('m')"><h3>[m]-[n]</h3></div>
+  <div class="category-card" onclick="toggleCategory('n')"><h3>[R]-[ɐ]</h3></div>
+  <div class="category-card" onclick="toggleCategory('o')"><h3>[l]</h3></div>
+  <div class="category-card" onclick="toggleCategory('p')"><h3>[f]-[v]</h3></div>
+  <div class="category-card" onclick="toggleCategory('q')"><h3>[s]-[z]</h3></div>
+  <div class="category-card" onclick="toggleCategory('r')"><h3>[ʃ]</h3></div>
+  <div class="category-card" onclick="toggleCategory('s')"><h3>[h]-[x]-[ç]</h3></div>
+  <div class="category-card" onclick="toggleCategory('t')"><h3>[j]</h3></div>
+  <div class="category-card" onclick="toggleCategory('u')"><h3>[ʒ]</h3></div>
+  <div class="category-card" onclick="toggleCategory('v')"><h3>[n]-[ŋ]</h3></div>
+  <div class="category-card" onclick="toggleCategory('w')"><h3>[tsi̯oːn]</h3></div>
+  <div class="category-card" onclick="toggleCategory('x')"><h3>[kv]</h3></div>
+</div>
+
+<!-- Affrikaten-->
+<div id="affrikaten-subgroup" class="category-list hidden">
+  <div class="category-card" onclick="toggleCategory('y')"><h3>[pf]-[ts]-[tʃ]</h3></div>
+</div>
+
+                <div id="a-tasks" class="category-tasks hidden">
+    <a class="button" href="#" onclick="showCategoryList()">Zurück zu Kategorien</a>
+    <div class="task-grid">
+        <div class="task-card" onclick="toggleTask('a-aufgabe1')">
+            <h3>Aufgabe 1</h3>
+            <p>Hör die Wörter und ordne sie den richtigen Lauten zu</p>
+            <div class="progress-bar" style="width: 15%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+        </div>
+        <div class="task-card" onclick="toggleTask('a-aufgabe2')">
+            <h3>Aufgabe 2</h3>
+            <p>Lies und vergleich</p>
+            <div class="progress-bar" style="width: 30%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+        </div>
+        <div class="task-card" onclick="toggleTask('a-aufgabe3')">
+            <h3>Aufgabe 3</h3>
+            <p>Mini-Dialoge</p>
+            <div class="progress-bar" style="width: 5%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+        </div>
+    </div>
+</div>
+
+<div id="a-aufgabe1" class="task-content hidden">
+    <h3>Aufgabe 1: Hör die Wörter und ordne sie den richtigen Lauten zu</h3>
+    <p><strong>Wörter</strong>: Vater, Hand, Staat, Bad, Stadt, bald, Plan, Lampe, Hahn, Jacke, Rahmen, Tanne, Haar, Paar, Rad</p>
+    <table><tr><th>[а]</th><th>[аː]</th></tr></table>
+    <a class="button" href="#" onclick="toggleTask('a-aufgabe1')">Schließen</a>
+</div>
+
+<div id="a-aufgabe2" class="task-content hidden">
+    <h3>Aufgabe 2: Lies und vergleich</h3>
+    <table>
+        <tr><th>[a:] – lang</th><th>[a] – kurz</th></tr>
+        <tr><td>sagen</td><td>satt</td></tr>
+        <tr><td>Saal</td><td>kann</td></tr>
+        <tr><td>fahren</td><td>wann</td></tr>
+        <tr><td>Jahr</td><td>dann</td></tr>
+        <tr><td>Mahl</td><td>Mann</td></tr>
+        <tr><td>Rad</td><td>Stadt</td></tr>
+    </table>
+    <a class="button" href="#" onclick="toggleTask('a-aufgabe2')">Schließen</a>
+</div>
+
+<div id="a-aufgabe3" class="task-content hidden">
+    <h3>Aufgabe 3: Mini-Dialoge</h3>
+    <p><strong>Partnerarbeit</strong> – je ein Satz mit [a:] und [a]</p>
+ <p>
+   A: „Ich sehe einen Saal.“<br>
+                        B: „Ich bin total satt!“<br>
+<br>
+                        A: „Ich habe eine Wahl getroffen.“<br>
+                        B: „Ich esse einen Apfel.“<br>
+<br>
+                        A: „Ich fahre morgen nach Baden.“<br>
+                        B: „Ich habe eine Katze.“<br>
+                    </p>
+
+    <a class="button" href="#" onclick="toggleTask('a-aufgabe3')">Schließen</a>
+</div>
+
+<!-- Звуки [ə]-[e:] -->
+<div id="b-tasks" class="category-tasks hidden">
+    <a class="button" href="#" onclick="showCategoryList()">Zurück zu Kategorien</a>
+    <div class="task-grid">
+        <div class="task-card" onclick="toggleTask('b-aufgabe1')">
+            <h3>Aufgabe 1</h3>
+            <p>Hör gut zu! – Welcher Laut ist es?</p>
+            <div class="progress-bar" style="width: 5%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+        </div>
+        <div class="task-card" onclick="toggleTask('b-aufgabe2')">
+            <h3>Aufgabe 2</h3>
+            <p>Hör die Wörter und ordne sie den richtigen Lauten zu</p>
+            <div class="progress-bar" style="width: 15%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+        </div>
+        <div class="task-card" onclick="toggleTask('b-aufgabe3')">
+            <h3>Aufgabe 3</h3>
+            <p>Sprich richtig aus</p>
+            <div class="progress-bar" style="width: 30%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+        </div>
+    </div>
+</div>
+
+<div id="b-aufgabe1" class="task-content hidden">
+    <h3>Aufgabe 1: Hör gut zu! – Welcher Laut ist es?</h3>
+    <p>Hör die Wörter. Entscheide: Ist der Vokal lang [e:] oder [ə]?</p>
+    <ol><li>sehen</li><li>haben</li><li>leben</li><li>lebt</li><li>Name</li><li>den</li><li>eine</li><li>Beet</li></ol>
+    <a class="button" href="#" onclick="toggleTask('b-aufgabe1')">Schließen</a>
+</div>
+
+<div id="b-aufgabe2" class="task-content hidden">
+    <h3>Aufgabe 2: Hör die Wörter und ordne sie den richtigen Lauten zu</h3>
+    <p><strong>Wörter</strong>: machen, Beeren, Regen, zehn, sehen, Schee, gehen, Beet, kommen, Tee, nehmen</p>
+    <table><tr><th>[ə]</th><th>[eː]</th></tr></table>
+    <a class="button" href="#" onclick="toggleTask('b-aufgabe2')">Schließen</a>
+</div>
+
+<div id="b-aufgabe3" class="task-content hidden">
+    <h3>Aufgabe 3: Sprich richtig aus</h3>
+    <table>
+        <tr>
+            <th>[ə]</th>
+            <th>[eː]</th>
+        </tr>
+        <tr>
+            <td>machen, kommen,<br>fragen, Atem,<br>besuchen, reden, Butter</td>
+            <td>sehen, Tee, gehen,<br>Schnee, leer,<br>nehmen, Meer</td>
+        </tr>
+    </table>
+    <a class="button" href="#" onclick="toggleTask('b-aufgabe3')">Schließen</a>
+</div>
+            
+<!-- [ε:]-[ε] Category -->
+<div id="c-tasks" class="category-tasks hidden">
+    <a class="button" href="#" onclick="showCategoryList()">Zurück zu Kategorien</a>
+    <div class="task-grid">
+        <div class="task-card" onclick="toggleTask('c-aufgabe1')">
+            <h3>Aufgabe 1</h3>
+            <p>Hör gut zu</p>
+            <div class="progress-bar" style="width: 30%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+        </div>
+        <div class="task-card" onclick="toggleTask('c-aufgabe2')">
+            <h3>Aufgabe 2</h3>
+            <p>Was hörst du?</p>
+            <div class="progress-bar" style="width: 15%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+        </div>
+        <div class="task-card" onclick="toggleTask('c-aufgabe3')">
+            <h3>Aufgabe 3</h3>
+            <p>Sprich deutlich</p>
+            <div class="progress-bar" style="width: 5%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+        </div>
+    </div>
+</div>
+
+<div id="c-aufgabe1" class="task-content hidden">
+    <h3>Aufgabe 1: Hör gut zu</h3>
+    <p>Hör die Wörter. Entscheide: Ist der Vokal lang [ε:] oder kurz [ε]?<p>
+<ol>
+        <li>Bär</li>
+        <li>Bett</li>
+        <li>sehr</li>
+        <li>nett</li>
+        <li>Märchen </li>
+    </ol>
+    <a class="button" href="#" onclick="toggleTask('c-aufgabe1')">Schließen</a>
+</div>
+
+<div id="c-aufgabe2" class="task-content hidden">
+    <h3>Aufgabe 2: Was hörst du?</h3>
+    <p>Verbinde die Wortpaare mit dem gleichen Vokal</p><br>
+<p><strong>Wörter</strong>: Bär – Bett – Mär – nett – mehr – fett – sehr – Setz – leer – Brett<p>
+    <a class="button" href="#" onclick="toggleTask('c-aufgabe2')">Schließen</a>
+</div>
+
+<div id="c-aufgabe3" class="task-content hidden">
+    <h3>Aufgabe 3: Sprich deutlich</h3>
+   
+    <ol>
+        <li>Bär – Bett</li>
+        <li>Mär – nett</li>
+        <li>mehr – fett</li>
+        <li>leer – Brett</li>
+    </ol>
+    <a class="button" href="#" onclick="toggleTask('c-aufgabe3')">Schließen</a>
+</div>
+
+<div id="d-tasks" class="category-tasks hidden">
+    <a class="button" href="#" onclick="showCategoryList()">Zurück zu Kategorien</a>
+    <div class="task-grid">
+        <div class="task-card" onclick="toggleTask('d-aufgabe1')">
+            <h3>Aufgabe 1</h3>
+            <p>Hör und unterscheide</p>
+            <div class="progress-bar" style="width: 15%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+        </div>
+        <div class="task-card" onclick="toggleTask('d-aufgabe2')">
+            <h3>Aufgabe 2</h3>
+            <p>Sprich richtig aus</p>
+            <div class="progress-bar" style="width: 30%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+        </div>
+        <div class="task-card" onclick="toggleTask('d-aufgabe3')">
+            <h3>Aufgabe 3</h3>
+            <p>Finde die Paare</p>
+            <div class="progress-bar" style="width: 5%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+        </div>
+    </div>
+</div>
+
+<div id="d-aufgabe1" class="task-content hidden">
+    <h3>Aufgabe 1: Hör und unterscheide</h3>
+    <p>Höre genau hin: Ist der Vokal lang [i:] oder kurz [i]?</p><br>
+    <p><strong>Wörter</strong>: Lied, hier, im, bieten, bitten, Stiel, Still, Tisch, Sie, Mitte, Spiel, Wind</p>
+    <a class="button" href="#" onclick="toggleTask('d-aufgabe1')">Schließen</a>
+</div>
+
+<div id="d-aufgabe2" class="task-content hidden">
+    <h3>Aufgabe 2: Sprich richtig aus</h3>
+    <table>
+        <tr>
+            <th>[iː]</th>
+            <th>[ɪ]</th>
+        </tr>
+        <tr>
+            <td>ziehen, Liebe, ihn, Tier,<br>Musik, sie, Brief, diebisch,<br>sieht, nie</td>
+            <td>bitte, Kind, Wind, Tisch,<br>mit, links, wichtig,<br>findet, Bild, Milch</td>
+        </tr>
+    </table>
+    <a class="button" href="#" onclick="toggleTask('d-aufgabe2')">Schließen</a>
+</div>
+
+<div id="d-aufgabe3" class="task-content hidden">
+    <h3>Aufgabe 3: Finde die Paare</h3>
+    <p>Sind diese Laute gleich?<p><br>
+    <p>ihm - im<br>  
+ihn – in<br>  
+bieten – bitten<br>  
+Wiesen – wissen<br>
+lieben – Lippen<br>
+Stiel – still<p>
+    <a class="button" href="#" onclick="toggleTask('d-aufgabe3')">Schließen</a>
+</div>
+
+<!-- Звуки [o:]-[ɔ] -->
+<div id="e-tasks" class="category-tasks hidden">
+    <a class="button" href="#" onclick="showCategoryList()">Zurück zu Kategorien</a>
+    <div class="task-grid">
+        <div class="task-card" onclick="toggleTask('e-aufgabe1')">
+            <h3>Aufgabe 1</h3>
+            <p>Sprich richtig aus</p>
+            <div class="progress-bar" style="width: 30%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+        </div>
+        <div class="task-card" onclick="toggleTask('e-aufgabe2')">
+            <h3>Aufgabe 2</h3>
+            <p>Sprich die Wortpaare laut</p>
+            <div class="progress-bar" style="width: 5%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+        </div>
+        <div class="task-card" onclick="toggleTask('e-aufgabe3')">
+            <h3>Aufgabe 3</h3>
+            <p>Welche Wörter passen zusammen?</p>
+            <div class="progress-bar" style="width: 15%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+        </div>
+    </div>
+</div>
+
+<div id="e-aufgabe1" class="task-content hidden">
+    <h3>Aufgabe 1: Sprich richtig aus</h3>
+    <table>
+        <tr>
+            <th>[oː]</th>
+            <th>[ɔ]</th>
+        </tr>
+        <tr>
+            <td>wohnen, Boot, Kohl, rot, Ofen, Mond</td>
+            <td>offen, Komma, Sonne, Post, voll, Holz</td>
+        </tr>
+    </table>
+    <a class="button" href="#" onclick="toggleTask('e-aufgabe1')">Schließen</a>
+</div>
+
+<div id="e-aufgabe2" class="task-content hidden">
+    <h3>Aufgabe 2: Sprich die Wortpaare laut</h3>
+    <ol><li>Ofen – offen</li><li>Boot – Bot</li><li>Boden – Bosse</li><li>Frau Groß – Frau Gross</li><li>Sohlen – sollen</li></ol>
+    <a class="button" href="#" onclick="toggleTask('e-aufgabe2')">Schließen</a>
+</div>
+
+<div id="e-aufgabe3" class="task-content hidden">
+    <h3>Aufgabe 3: Welche Wörter passen zusammen?</h3>
+    <p>Finde die Wörter mit dem gleichen Vokal<p><br>
+    <p>Ofen – offen – Boot – Loch – Boden – Sonne – Klo – Topf</p>
+    <a class="button" href="#" onclick="toggleTask('e-aufgabe3')">Schließen</a>
+</div>
+
+<div id="f-tasks" class="category-tasks hidden">
+    <a class="button" href="#" onclick="showCategoryList()">Zurück zu Kategorien</a>
+    <div class="task-grid">
+        <div class="task-card" onclick="toggleTask('f-aufgabe1')">
+            <h3>Aufgabe 1</h3>
+            <p>Hör genau hin!</p>
+            <div class="progress-bar" style="width: 15%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+        </div>
+        <div class="task-card" onclick="toggleTask('f-aufgabe2')">
+            <h3>Aufgabe 2</h3>
+            <p>Sprich richtig aus</p>
+            <div class="progress-bar" style="width: 30%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+        </div>
+        <div class="task-card" onclick="toggleTask('f-aufgabe3')">
+            <h3>Aufgabe 3</h3>
+            <p>Lies die Wortpaare laut</p>
+            <div class="progress-bar" style="width: 5%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+        </div>
+    </div>
+</div>
+
+<div id="f-aufgabe1" class="task-content hidden">
+    <h3>Aufgabe 1: Hör genau hin!</h3>
+    <p>Lang oder kurz?</p><br>
+    <p>Wörter: Schule, Schutt, Ruhe, Kuss, Fuß, Hund</p>
+    <a class="button" href="#" onclick="toggleTask('f-aufgabe1')">Schließen</a>
+</div>
+
+<div id="f-aufgabe2" class="task-content hidden">
+    <h3>Aufgabe 2: Sprich richtig aus</h3>
+    <table>
+        <tr>
+            <th>[uː]</th>
+            <th>[ʊ]</th>
+        </tr>
+        <tr>
+            <td>Kuh, Schuh, Juli, Uhr,<br>Schule, Blume, Stuhl, Ruhe</td>
+            <td>Mund, kurz, Kurs, Busch,<br>Kuss, Puppe, Luft, Butter</td>
+        </tr>
+    </table>
+    <a class="button" href="#" onclick="toggleTask('f-aufgabe2')">Schließen</a>
+</div>
+
+<div id="f-aufgabe3" class="task-content hidden">
+    <h3>Aufgabe 3: Lies die Wortpaare laut</h3>
+    <ol>
+        <li>Schule – Schutt</li>
+        <li>Fuß – Kuss</li>
+        <li>Ruhe – Luft</li>
+        <li>Stuhl – Hund</li>
+    </ol>
+    <a class="button" href="#" onclick="toggleTask('f-aufgabe3')">Schließen</a>
+</div>
+
+<!-- Звуки [y:]-[y] -->
+<div id="g-tasks" class="category-tasks hidden">
+    <a class="button" href="#" onclick="showCategoryList()">Zurück zu Kategorien</a>
+    <div class="task-grid">
+        <div class="task-card" onclick="toggleTask('g-aufgabe1')">
+            <h3>Aufgabe 1</h3>
+            <p>Hör den Unterschied</p>
+            <div class="progress-bar" style="width: 15%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+        </div>
+        <div class="task-card" onclick="toggleTask('g-aufgabe2')">
+            <h3>Aufgabe 2</h3>
+            <p>Sprich richtig aus</p>
+            <div class="progress-bar" style="width: 30%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+        </div>
+        <div class="task-card" onclick="toggleTask('g-aufgabe3')">
+            <h3>Aufgabe 3</h3>
+            <p>Sätze wiederholen</p>
+            <div class="progress-bar" style="width: 5%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+        </div>
+    </div>
+</div>
+
+<div id="g-aufgabe1" class="task-content hidden">
+    <h3>Aufgabe 1: Hör den Unterschied</h3>
+    <p>Lang oder kurz?</p><br>
+    <p>Hüte<br>
+Hütte<br> 
+über<br> 
+lüften<br> 
+müde<br> 
+Mütze<br> 
+</p>
+    <a class="button" href="#" onclick="toggleTask('g-aufgabe1')">Schließen</a>
+</div>
+
+<div id="g-aufgabe2" class="task-content hidden">
+    <h3>Aufgabe 2: Sprich richtig aus</h3>
+    <table>
+        <tr>
+            <th>[yː]</th>
+            <th>[ʏ]</th>
+        </tr>
+        <tr>
+            <td>kühl, früh, Tür, Füße,<br>Büro, grün, Süden, müde</td>
+            <td>fünf, Glück, Küste, müssen,<br>Stück, Brücke, dünn, Hütte</td>
+        </tr>
+    </table>
+    <a class="button" href="#" onclick="toggleTask('g-aufgabe2')">Schließen</a>
+</div>
+
+<div id="g-aufgabe3" class="task-content hidden">
+    <h3>Aufgabe 3: Wiederhol die Sätze</h3>
+    <ol>
+        <li>Früh ist es kühl [yː] + [yː]</li>
+        <li>Das Glück ist in der Hütte [ʏ] + [ʏ]</li>
+        <li>Die Tür ist dünn [yː] + [ʏ]</li>
+    </ol>
+    <a class="button" href="#" onclick="toggleTask('g-aufgabe3')">Schließen</a>
+</div>
+
+<div id="h-tasks" class="category-tasks hidden">
+    <a class="button" href="#" onclick="showCategoryList()">Zurück zu Kategorien</a>
+    <div class="task-grid">
+        <div class="task-card" onclick="toggleTask('h-aufgabe1')">
+            <h3>Aufgabe 1</h3>
+            <p>Lang oder kurz?</p>
+            <div class="progress-bar" style="width: 15%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+        </div>
+        <div class="task-card" onclick="toggleTask('h-aufgabe2')">
+            <h3>Aufgabe 2</h3>
+            <p>Sprich richtig aus</p>
+            <div class="progress-bar" style="width: 30%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+        </div>
+        <div class="task-card" onclick="toggleTask('h-aufgabe3')">
+            <h3>Aufgabe 3</h3>
+            <p>Füll die Lücken</p>
+            <div class="progress-bar" style="width: 5%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+        </div>
+    </div>
+</div>
+
+<div id="h-aufgabe1" class="task-content hidden">
+    <h3>Aufgabe 1: Lang oder kurz?</h3>
+    <p>Höre die Wörter und entscheide: [ø:] oder [œ]?</p><br>
+<p>schön<br> 
+Hölle<br> 
+Möbel<br> 
+Hölle<br> 
+böse<br> 
+Stöcke 
+<p>   
+    <a class="button" href="#" onclick="toggleTask('h-aufgabe1')">Schließen</a>
+</div>
+
+<div id="h-aufgabe2" class="task-content hidden">
+    <h3>Aufgabe 2: Sprich richtig aus</h3>
+    <table>
+        <tr>
+            <th>[øː]</th>
+            <th>[œ]</th>
+        </tr>
+        <tr>
+            <td>schön, Höhle, Löwe, böse,<br>Söhne, Höhe, Flöte</td>
+            <td>können, zwölf, Köln, Wörter,<br>öffnen, Löffel, Götter</td>
+        </tr>
+    </table>
+    <a class="button" href="#" onclick="toggleTask('h-aufgabe2')">Schließen</a>
+</div>
+
+<div id="h-aufgabe3" class="task-content hidden">
+    <h3>Aufgabe 3: Füll die Lücken</h3>
+    <p><strong>Wörter</strong>: zwölf, schön, Löffel, böse</p><br>
+    <ol>
+        <li>Das Bild ist sehr <u>_____</u>. [øː]</li>
+        <li>Es ist <u>_____</u> Uhr. [œ]</li>
+        <li>Der <u>_____</u> liegt auf dem Tisch. [œ]</li>
+        <li>Der Hund ist <u>_____</u>. [øː]</li>
+    </ol>
+    <a class="button" href="#" onclick="toggleTask('h-aufgabe3')">Schließen</a>
+</div>
+
+<!-- Дифтонги [ae]-[ao]-[ɔø] -->
+<div id="i-tasks" class="category-tasks hidden">
+    <a class="button" href="#" onclick="showCategoryList()">Zurück zu Kategorien</a>
+    <div class="task-grid">
+        <div class="task-card" onclick="toggleTask('i-aufgabe1')">
+            <h3>Aufgabe 1</h3>
+            <p>Sprich richtig aus</p>
+            <div class="progress-bar" style="width: 30%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+        </div>
+        <div class="task-card" onclick="toggleTask('i-aufgabe2')">
+            <h3>Aufgabe 2</h3>
+            <p>Sprich die Wortpaare laut</p>
+            <div class="progress-bar" style="width: 5%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+        </div>
+        <div class="task-card" onclick="toggleTask('i-aufgabe3')">
+            <h3>Aufgabe 3</h3>
+            <p>Sortiere die Wörter</p>
+            <div class="progress-bar" style="width: 15%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+        </div>
+    </div>
+</div>
+
+<div id="i-aufgabe1" class="task-content hidden">
+    <h3>Aufgabe 1: Sprich richtig aus</h3>
+    <table>
+        <tr>
+            <th>[ae] (ei/ai)</th>
+            <th>[ao] (au)</th>
+            <th>[ɔø] (eu/äu)</th>
+        </tr>
+        <tr>
+            <td>nein, Mai, Eis, leicht,<br>Seite, mein, Kaiser, Arbeit</td>
+            <td>Haus, Maus, Baum, laut,<br>Auto, blau, Traum, schlau</td>
+            <td>neu, Häuser, Freude, Leute,<br>träumen, Bäume, Feuer, Säule</td>
+        </tr>
+    </table>
+    <a class="button" href="#" onclick="toggleTask('i-aufgabe1')">Schließen</a>
+</div>
+
+<div id="i-aufgabe2" class="task-content hidden">
+    <h3>Aufgabe 2: Sprich die Wortpaare laut</h3>
+    <p>Achte auf die verschiedenen Diphthonge</p>
+    <ol>
+        <li>mein – blau – neu</li>
+        <li>Mai – Frau – Freude</li>
+        <li>dein – Haus – heute</li>
+        <li>nein – raus – feucht</li>
+    </ol>
+    <a class="button" href="#" onclick="toggleTask('i-aufgabe2')">Schließen</a>
+</div>
+
+<div id="i-aufgabe3" class="task-content hidden">
+    <h3>Aufgabe 3: Sortiere die Wörter</h3>
+    <p><strong>Wörter</strong>: mein – blau – neu – Haus – heute – Mai – Frau – Laune – feucht</p>
+    <table>
+        <tr>
+            <th>[ae]</th>
+            <th>[ao]</th>
+            <th>[ɔø]</th>
+        </tr>
+    </table>
+    <a class="button" href="#" onclick="toggleTask('i-aufgabe3')">Schließen</a>
+</div>
+</div>
+<div id="y-tasks" class="category-tasks hidden">
+    <a class="button" href="#" onclick="showCategoryList()">Zurück zu Kategorien</a>
+    <div class="task-grid">
+        <div class="task-card" onclick="toggleTask('y-aufgabe1')">
+            <h3>Aufgabe 1</h3>
+            <p>Laut unterscheiden</p>
+            <div class="progress-bar" style="width: 0%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+        </div>
+        <div class="task-card" onclick="toggleTask('y-aufgabe2')">
+            <h3>Aufgabe 2</h3>
+            <p>Hör und sprich nach</p>
+            <div class="progress-bar" style="width: 0%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+        </div>
+        <div class="task-card" onclick="toggleTask('y-aufgabe3')">
+            <h3>Aufgabe 3</h3>
+            <p>Was hörst du im Zoo?</p>
+            <div class="progress-bar" style="width: 0%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+        </div>
+    </div>
+</div>
+
+<div id="y-aufgabe1" class="task-content hidden">
+    <h3>Aufgabe 1: Laut unterscheiden</h3>
+    <p>Hör das Wort. Bei <strong>[pf]</strong> pfeife, bei <strong>[ts]</strong> schnippe, bei <strong>[tʃ]</strong> klatsche.</p><br>
+    <p><strong>Wörter:</strong> Pfanne, Katze, Tschüss, Pflanze, Pizza, Deutsch</p>
+    <a class="button" href="#" onclick="toggleTask('y-aufgabe1')">Schließen</a>
+</div>
+
+<div id="y-aufgabe2" class="task-content hidden">
+    <h3>Aufgabe 2: Hör und sprich nach</h3>
+    <table>
+        <tr><th>[p] – [pf]</th></tr>
+        <tr><td>Frau Stump – Frau Stumpf</td></tr>
+        <tr><td>Frau Töpper – Frau Töpfer</td></tr>
+        <tr><td>Herr Paller – Herr Pfaller</td></tr>
+    </table>
+    <br>
+    <table>
+        <tr><th>[f] – [pf]</th></tr>
+        <tr><td>Herr Fister – Herr Pfister</td></tr>
+        <tr><td>Frau Hoff – Frau Hopf</td></tr>
+        <tr><td>Frau Feiler – Frau Pfeiler</td></tr>
+    </table>
+    <br>
+    <table>
+        <tr><th>[t] – [ts]</th></tr>
+        <tr><td>recht – rechts</td></tr>
+        <tr><td>nicht – nichts</td></tr>
+        <tr><td>satt – Satz</td></tr>
+    </table>
+    <br>
+    <table>
+        <tr><th>[z] – [ts]</th></tr>
+        <tr><td>so – Zoo</td></tr>
+        <tr><td>seit – Zeit</td></tr>
+        <tr><td>See – Zeh</td></tr>
+    </table>
+    <br>
+    <table>
+        <tr><th>[s] – [ts]</th></tr>
+        <tr><td>Kasse – Katze</td></tr>
+        <tr><td>heißen – heizen</td></tr>
+        <tr><td>Kurs – kurz</td></tr>
+    </table>
+    <br>
+    <table>
+        <tr><th>[tʃ]</th></tr>
+        <tr><td>Kutscher, deutsch, Putsch, Deutschlehrer,<br>rutschen, Deutschunterricht, klatschen, zwitschern</td></tr>
+    </table>
+    <a class="button" href="#" onclick="toggleTask('y-aufgabe2')">Schließen</a>
+</div>
+
+<div id="y-aufgabe3" class="task-content hidden">
+    <h3>Aufgabe 3: Was hörst du im Zoo?</h3>
+    <p>Stellt euch vor, ihr seid im Zoo. Erzählt, was ihr seht und hört. Verwendet Wörter mit den Lauten <strong>[tʃ]</strong>, <strong>[pf]</strong>, <strong>[ts]</strong>.</p><br>
+    <p><strong>Wörter:</strong> zwitschern, klatschen, Katze, Pfeil, Pfau, Kutsche, Polizist, deutsch</p><br>
+    <p><strong>Beispiel:</strong></p>
+    <ul>
+        <li>Ich sehe eine Katze und höre einen Vogel zwitschern.</li>
+        <li>Ich klatsche in die Hände, weil der Pfau so schön ist.</li>
+        <li>Der Pfeil zeigt zur Kutsche.</li>
+    </ul>
+    <a class="button" href="#" onclick="toggleTask('y-aufgabe3')">Schließen</a>
+</div>
+<div id="j-tasks" class="category-tasks hidden"> 
+  <a class="button" href="#" onclick="showCategoryList()">Zurück zu Kategorien</a>
+  <div class="task-grid">
+    <div class="task-card" onclick="toggleTask('j-aufgabe1')">
+      <h3>Aufgabe 1</h3>
+      <p>Laut unterscheiden</p>
+      <div class="progress-bar" style="width: 30%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+    <div class="task-card" onclick="toggleTask('j-aufgabe2')">
+      <h3>Aufgabe 2</h3>
+      <p>Hör und sprich nach</p>
+      <div class="progress-bar" style="width: 5%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+    <div class="task-card" onclick="toggleTask('j-aufgabe3')">
+      <h3>Aufgabe 3</h3>
+      <p>Lies und unterstreiche</p>
+      <div class="progress-bar" style="width: 15%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+  </div>
+</div>
+
+<div id="j-aufgabe1" class="task-content hidden">
+  <h3>Aufgabe 1: Laut unterscheiden</h3>
+  <p>Wenn du den Laut [t] hörst, klatsche zweimal. Wenn du den Laut [d] hörst, klatsche einmal.</p><br>
+  <p><strong>Wörter</strong>: Tag, Dame, Tasse, Dose, Tisch, Dorf, Teller, Decke</p>
+  <a class="button" href="#" onclick="toggleTask('j-aufgabe1')">Schließen</a>
+</div>
+
+<div id="j-aufgabe2" class="task-content hidden">
+  <h3>Aufgabe 2: Hör und sprich nach</h3>
+  <p><strong>[t]-[d]</strong></p>
+  <ol>
+    <li>Tier – dir</li>
+    <li>tanken – danken</li>
+    <li>Ente – Ende</li>
+    <li>Liter – Lieder</li>
+    <li>Leiter – leider</li>
+    <li>Seite – Seide</li>
+  </ol>
+  <a class="button" href="#" onclick="toggleTask('j-aufgabe2')">Schließen</a>
+</div>
+
+<div id="j-aufgabe3" class="task-content hidden">
+  <h3>Aufgabe 3: Lies und unterstreiche [t] und [d]</h3>
+  <p>Lies den Text laut. Unterstreiche alle Wörter mit [t] grün und alle mit [d] blau.</p><br>
+  <p><strong>Text</strong>: Tom und Dario sind Brüder. Tom trinkt Tee, Dario trinkt Saft. Am Dienstag tanzen sie im Garten. Dann telefonieren sie mit Dora.</p>
+  <a class="button" href="#" onclick="toggleTask('j-aufgabe3')">Schließen</a>
+</div>
+<div id="k-tasks" class="category-tasks hidden"> 
+  <a class="button" href="#" onclick="showCategoryList()">Zurück zu Kategorien</a>
+  <div class="task-grid">
+    <div class="task-card" onclick="toggleTask('k-aufgabe1')">
+      <h3>Aufgabe 1</h3>
+      <p>Laut unterscheiden</p>
+      <div class="progress-bar" style="width: 30%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+    <div class="task-card" onclick="toggleTask('k-aufgabe2')">
+      <h3>Aufgabe 2</h3>
+      <p>Hör und sprich nach</p>
+      <div class="progress-bar" style="width: 5%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+    <div class="task-card" onclick="toggleTask('k-aufgabe3')">
+      <h3>Aufgabe 3</h3>
+      <p>Lies den Text laut vor und unterstreiche</p>
+      <div class="progress-bar" style="width: 15%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+  </div>
+</div>
+
+<div id="k-aufgabe1" class="task-content hidden">
+  <h3>Aufgabe 1: Laut unterscheiden</h3>
+  <p>Wenn du den Laut [p] hörst, hebe die rechte Hand. Bei [b] die linke Hand.</p><br>
+  <p><strong>Wörter</strong>: Brot, Puppe, Blume, Papa, Bild, Packung, Brief, Post</p>
+  <a class="button" href="#" onclick="toggleTask('k-aufgabe1')">Schließen</a>
+</div>
+
+<div id="k-aufgabe2" class="task-content hidden">
+  <h3>Aufgabe 2: Hör und sprich nach</h3>
+  <p><strong>[p]–[b]</strong></p>
+  <ol>
+    <li>Paar – Bar</li>
+    <li>Pass – Bass</li>
+    <li>packen – backen</li>
+    <li>Gepäck – Gebäck</li>
+    <li>Oper – Ober</li>
+    <li>Lippen – lieben</li>
+  </ol>
+  <a class="button" href="#" onclick="toggleTask('k-aufgabe2')">Schließen</a>
+</div>
+
+<div id="k-aufgabe3" class="task-content hidden">
+  <h3>Aufgabe 3: Lies den Text laut vor und unterstreiche</h3>
+  <p>Unterstreiche alle Wörter mit [p] grün und alle mit [b] blau.</p><br>
+  <p><strong>Text</strong>: Paula und Ben backen Pizza. Ben bringt Paprika, Paula bringt Butter. Beide packen die Pizza auf das Blech. Plötzlich bellt der Hund im Garten. Paula bleibt ruhig, aber Ben springt auf.</p>
+  <a class="button" href="#" onclick="toggleTask('k-aufgabe3')">Schließen</a>
+</div>
+<div id="l-tasks" class="category-tasks hidden"> 
+  <a class="button" href="#" onclick="showCategoryList()">Zurück zu Kategorien</a>
+  <div class="task-grid">
+    <div class="task-card" onclick="toggleTask('l-aufgabe1')">
+      <h3>Aufgabe 1</h3>
+      <p>Laut unterscheiden</p>
+      <div class="progress-bar" style="width: 30%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+    <div class="task-card" onclick="toggleTask('l-aufgabe2')">
+      <h3>Aufgabe 2</h3>
+      <p>Hör und sprich nach</p>
+      <div class="progress-bar" style="width: 5%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+    <div class="task-card" onclick="toggleTask('l-aufgabe3')">
+      <h3>Aufgabe 3</h3>
+      <p>Lies den Text laut vor und unterstreiche</p>
+      <div class="progress-bar" style="width: 15%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+  </div>
+</div>
+
+<div id="l-aufgabe1" class="task-content hidden">
+  <h3>Aufgabe 1: Laut unterscheiden</h3>
+  <p>Wenn du den Laut [k] hörst, male einen Kreis. Wenn du den Laut [g] hörst, male ein Quadrat.</p><br>
+  <p><strong>Wörter</strong>: Kind, gut, kalt, Glas, Kopf, Garten, Katze, Gabel</p>
+  <a class="button" href="#" onclick="toggleTask('l-aufgabe1')">Schließen</a>
+</div>
+
+<div id="l-aufgabe2" class="task-content hidden">
+  <h3>Aufgabe 2: Hör und sprich nach</h3>
+  <p><strong>[k]–[g]</strong></p>
+  <ol>
+    <li>Karten – Garten</li>
+    <li>kennen – geben</li>
+    <li>Kasse – Gasse</li>
+    <li>Kabel – Gabel</li>
+    <li>Kern – gern</li>
+    <li>wecken – wegen</li>
+  </ol>
+  <a class="button" href="#" onclick="toggleTask('l-aufgabe2')">Schließen</a>
+</div>
+
+<div id="l-aufgabe3" class="task-content hidden">
+  <h3>Aufgabe 3: Lies den Text laut vor und unterstreiche</h3><br>
+  <p>Unterstreiche alle Wörter mit [k] grün und alle mit [g] blau.</p><br>
+  <p><strong>Text</strong>: Klaus und Gabi kochen gern. Klaus kauft Gemüse, Gabi bringt Kekse. Im Garten klopft der Kater an die Tür. Gabi gibt ihm einen Keks.</p>
+  <a class="button" href="#" onclick="toggleTask('l-aufgabe3')">Schließen</a>
+</div>
+<div id="m-tasks" class="category-tasks hidden"> 
+  <a class="button" href="#" onclick="showCategoryList()">Zurück zu Kategorien</a>
+  <div class="task-grid">
+    <div class="task-card" onclick="toggleTask('m-aufgabe1')">
+      <h3>Aufgabe 1</h3>
+      <p>Laut unterscheiden</p>
+      <div class="progress-bar" style="width: 30%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+    <div class="task-card" onclick="toggleTask('m-aufgabe2')">
+      <h3>Aufgabe 2</h3>
+      <p>Hör und sprich nach</p>
+      <div class="progress-bar" style="width: 5%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+    <div class="task-card" onclick="toggleTask('m-aufgabe3')">
+      <h3>Aufgabe 3</h3>
+      <p>Lies den Text laut vor und unterstreiche</p>
+      <div class="progress-bar" style="width: 15%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+  </div>
+</div>
+
+<div id="m-aufgabe1" class="task-content hidden">
+  <h3>Aufgabe 1: Laut unterscheiden</h3>
+  <p>Wenn du den Laut [m] hörst, klopfe auf den Tisch. Wenn du den Laut [n] hörst, klopfe in die Hände.</p><br>
+  <p><strong>Wörter</strong>: Maus, Nase, Mütze, Nacht, Milch, neun, machen, nah</p>
+  <a class="button" href="#" onclick="toggleTask('m-aufgabe1')">Schließen</a>
+</div>
+
+<div id="m-aufgabe2" class="task-content hidden">
+  <h3>Aufgabe 2: Hör und sprich nach</h3>
+  <p><strong>[m]–[n]</strong></p>
+  <ol>
+    <li>machen – nach</li>
+    <li>Mond – Norden</li>
+    <li>Maus – Nase</li>
+    <li>Mein – nein</li>
+    <li>Mutter – Nummer</li>
+    <li>mal – nur</li>
+  </ol>
+  <a class="button" href="#" onclick="toggleTask('m-aufgabe2')">Schließen</a>
+</div>
+
+<div id="m-aufgabe3" class="task-content hidden">
+  <h3>Aufgabe 3: Lies den Text laut vor und unterstreiche</h3>
+  <p>Unterstreiche alle Wörter mit [m] grün und alle mit [n] blau.</p><br>
+  <p><strong>Text</strong>: Max mag die neue Mütze. Nina nimmt die Nase voll. Manchmal macht man Dinge, die nicht einfach sind.</p>
+  <a class="button" href="#" onclick="toggleTask('m-aufgabe3')">Schließen</a>
+</div>
+<div id="n-tasks" class="category-tasks hidden"> 
+  <a class="button" href="#" onclick="showCategoryList()">Zurück zu Kategorien</a>
+  <div class="task-grid">
+    <div class="task-card" onclick="toggleTask('n-aufgabe1')">
+      <h3>Aufgabe 1</h3>
+      <p>Laut unterscheiden</p>
+      <div class="progress-bar" style="width: 30%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+    <div class="task-card" onclick="toggleTask('n-aufgabe2')">
+      <h3>Aufgabe 2</h3>
+      <p>Hör und sprich nach</p>
+      <div class="progress-bar" style="width: 5%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+    <div class="task-card" onclick="toggleTask('n-aufgabe3')">
+      <h3>Aufgabe 3</h3>
+      <p>Lies den Text laut vor und unterstreiche</p>
+      <div class="progress-bar" style="width: 15%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+  </div>
+</div>
+
+<div id="n-aufgabe1" class="task-content hidden">
+  <h3>Aufgabe 1: Laut unterscheiden</h3>
+  <p>Wenn du den Laut [ʁ] hörst, klatsche zweimal. Wenn du den Laut [ɐ] hörst, klatsche einmal.</p><br>
+  <p><strong>Wörter</strong>: rot, Vater, Garten, Arbeit, hören, werden, kurz, Farbe</p>
+  <a class="button" href="#" onclick="toggleTask('n-aufgabe1')">Schließen</a>
+</div>
+
+<div id="n-aufgabe2" class="task-content hidden">
+  <h3>Aufgabe 2: Hör und sprich nach</h3>
+  <p><strong>[ʁ]–[ɐ]</strong></p>
+  <ol>
+    <li>Vater – Regen</li>
+    <li>Frau – Mutter</li>
+    <li>rot – Butter</li>
+    <li>reisen – wir</li>
+    <li>warten – mir</li>
+    <li>kurz – jeder</li>
+  </ol>
+  <a class="button" href="#" onclick="toggleTask('n-aufgabe2')">Schließen</a>
+</div>
+
+<div id="n-aufgabe3" class="task-content hidden">
+  <h3>Aufgabe 3: Lies den Text laut vor und unterstreiche</h3>
+  <p>Unterstreiche alle Wörter mit [ʁ] grün und alle mit [ɐ] blau.</p><br>
+  <p><strong>Text</strong>: Der Vater arbeitet im Garten. Er hört die rote Farbe des Autos. Kurz vor der Arbeit ruft er an.</p>
+  <a class="button" href="#" onclick="toggleTask('n-aufgabe3')">Schließen</a>
+</div>
+<div id="o-tasks" class="category-tasks hidden"> 
+  <a class="button" href="#" onclick="showCategoryList()">Zurück zu Kategorien</a>
+  <div class="task-grid">
+    <div class="task-card" onclick="toggleTask('o-aufgabe1')">
+      <h3>Aufgabe 1</h3>
+      <p>Laut erkennen</p>
+      <div class="progress-bar" style="width: 30%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+    <div class="task-card" onclick="toggleTask('o-aufgabe2')">
+      <h3>Aufgabe 2</h3>
+      <p>Hör und sprich nach</p>
+      <div class="progress-bar" style="width: 5%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+    <div class="task-card" onclick="toggleTask('o-aufgabe3')">
+      <h3>Aufgabe 3</h3>
+      <p>Lies den Text laut vor und unterstreiche</p>
+      <div class="progress-bar" style="width: 15%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+  </div>
+</div>
+
+<div id="o-aufgabe1" class="task-content hidden">
+  <h3>Aufgabe 1: Laut erkennen</h3>
+  <p>Klatsche, wenn du den Laut [l] hörst.</p><br>
+  <p><strong>Wörter</strong>: Lampe, laufen, lesen, lang, lecker, blau, Kalt, Hall</p>
+  <a class="button" href="#" onclick="toggleTask('o-aufgabe1')">Schließen</a>
+</div>
+
+<div id="o-aufgabe2" class="task-content hidden">
+  <h3>Aufgabe 2: Hör und sprich nach</h3>
+  <p><strong>[l]</strong></p>
+  <ol>
+    <li>Lampe</li>
+    <li>Laufen</li>
+    <li>Lecker</li>
+    <li>Blau</li>
+    <li>Kalt</li>
+    <li>Hallo</li>
+  </ol>
+  <a class="button" href="#" onclick="toggleTask('o-aufgabe2')">Schließen</a>
+</div>
+
+<div id="o-aufgabe3" class="task-content hidden">
+  <h3>Aufgabe 3: Lies den Text laut vor und unterstreiche</h3>
+  <p>Unterstreiche alle Wörter mit [l].</p><br>
+  <p><strong>Text</strong>: Lena läuft in die Lampe. Das blaue Licht ist sehr kalt. Hallo, wie geht’s dir?</p>
+  <a class="button" href="#" onclick="toggleTask('o-aufgabe3')">Schließen</a>
+</div>
+<div id="p-tasks" class="category-tasks hidden"> 
+  <a class="button" href="#" onclick="showCategoryList()">Zurück zu Kategorien</a>
+  <div class="task-grid">
+    <div class="task-card" onclick="toggleTask('p-aufgabe1')">
+      <h3>Aufgabe 1</h3>
+      <p>Laut unterscheiden</p>
+      <div class="progress-bar" style="width: 30%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+    <div class="task-card" onclick="toggleTask('p-aufgabe2')">
+      <h3>Aufgabe 2</h3>
+      <p>Hör und sprich nach</p>
+      <div class="progress-bar" style="width: 5%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+    <div class="task-card" onclick="toggleTask('p-aufgabe3')">
+      <h3>Aufgabe 3</h3>
+      <p>Lies den Text laut vor und unterstreiche</p>
+      <div class="progress-bar" style="width: 15%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+  </div>
+</div>
+
+<div id="p-aufgabe1" class="task-content hidden">
+  <h3>Aufgabe 1: Laut unterscheiden</h3>
+  <p>Wenn du den Laut [f] hörst, klopfe auf den Tisch. Wenn du den Laut [v] hörst, klopfe in die Hände.</p><br>
+  <p><strong>Wörter</strong>: Fisch, Vogel, fahren, Waffe, Feuer, Vater, fahren, voll</p>
+  <a class="button" href="#" onclick="toggleTask('p-aufgabe1')">Schließen</a>
+</div>
+
+<div id="p-aufgabe2" class="task-content hidden">
+  <h3>Aufgabe 2: Hör und sprich nach</h3>
+  <p><strong>[f]–[v]</strong></p>
+  <ol>
+    <li>vier – wir</li>
+    <li>Feld – Welt</li>
+    <li>fahren – waren</li>
+    <li>fein – Wein</li>
+    <li>fort – Wort</li>
+    <li>fischen – wischen</li>
+  </ol>
+  <a class="button" href="#" onclick="toggleTask('p-aufgabe2')">Schließen</a>
+</div>
+
+<div id="p-aufgabe3" class="task-content hidden">
+  <h3>Aufgabe 3: Lies den Text laut vor und unterstreiche</h3>
+  <p>Unterstreiche alle Wörter mit [f] grün und alle mit [v] blau.</p><br>
+  <p><strong>Text</strong>: Der Fisch fährt schnell. Der Vogel fliegt hoch. Die Waffe ist schwer. Der Vater fährt nach Hause.</p>
+  <a class="button" href="#" onclick="toggleTask('p-aufgabe3')">Schließen</a>
+</div>
+<div id="q-tasks" class="category-tasks hidden"> 
+  <a class="button" href="#" onclick="showCategoryList()">Zurück zu Kategorien</a>
+  <div class="task-grid">
+    <div class="task-card" onclick="toggleTask('q-aufgabe1')">
+      <h3>Aufgabe 1</h3>
+      <p>Laut unterscheiden</p>
+      <div class="progress-bar" style="width: 30%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+    <div class="task-card" onclick="toggleTask('q-aufgabe2')">
+      <h3>Aufgabe 2</h3>
+      <p>Hör und sprich nach</p>
+      <div class="progress-bar" style="width: 5%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+    <div class="task-card" onclick="toggleTask('q-aufgabe3')">
+      <h3>Aufgabe 3</h3>
+      <p>Lies den Text laut vor und unterstreiche</p>
+      <div class="progress-bar" style="width: 15%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+  </div>
+</div>
+
+<div id="q-aufgabe1" class="task-content hidden">
+  <h3>Aufgabe 1: Laut unterscheiden</h3>
+  <p>Wenn du den Laut [s] hörst, klopfe auf den Tisch. Wenn du den Laut [z] hörst, klopfe in die Hände.</p><br>
+  <p><strong>Wörter</strong>: Sonne, Zug, Salz, Zebra, sitzen, sagen, suchen, zeigen</p>
+  <a class="button" href="#" onclick="toggleTask('q-aufgabe1')">Schließen</a>
+</div>
+
+<div id="q-aufgabe2" class="task-content hidden">
+  <h3>Aufgabe 2: Hör und sprich nach</h3>
+  <p><strong>[s]–[z]</strong></p>
+  <ol>
+    <li>reißen – reisen</li>
+    <li>fließen – Fliesen</li>
+    <li>Haus – Sonne</li>
+    <li>Wasser – sein</li>
+    <li>heiß – sieben</li>
+  </ol>
+  <a class="button" href="#" onclick="toggleTask('q-aufgabe2')">Schließen</a>
+</div>
+
+<div id="q-aufgabe3" class="task-content hidden">
+  <h3>Aufgabe 3: Lies den Text laut vor und unterstreiche</h3>
+  <p>Unterstreiche alle Wörter mit [s] grün und alle mit [z] blau.</p><br>
+  <p><strong>Text</strong>: Die Sonne scheint. Der Zug fährt. Salz ist auf dem Tisch. Das Zebra läuft schnell. Ich sitze und sage etwas.</p>
+  <a class="button" href="#" onclick="toggleTask('q-aufgabe3')">Schließen</a>
+</div>
+<div id="r-tasks" class="category-tasks hidden"> 
+  <a class="button" href="#" onclick="showCategoryList()">Zurück zu Kategorien</a>
+  <div class="task-grid">
+    <div class="task-card" onclick="toggleTask('r-aufgabe1')">
+      <h3>Aufgabe 1</h3>
+      <p>Laut erkennen</p>
+      <div class="progress-bar" style="width: 30%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+    <div class="task-card" onclick="toggleTask('r-aufgabe2')">
+      <h3>Aufgabe 2</h3>
+      <p>Hör und sprich nach</p>
+      <div class="progress-bar" style="width: 5%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+    <div class="task-card" onclick="toggleTask('r-aufgabe3')">
+      <h3>Aufgabe 3</h3>
+      <p>Lies den Text laut vor und unterstreiche</p>
+      <div class="progress-bar" style="width: 15%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+  </div>
+</div>
+
+<div id="r-aufgabe1" class="task-content hidden">
+  <h3>Aufgabe 1: Laut erkennen</h3>
+  <p>Klatsche, wenn du den Laut [ʃ] hörst.</p><br>
+  <p><strong>Wörter</strong>: Schuhe, Schaf, schön, Tisch, Schule, schnell, Fisch, frisch</p>
+  <a class="button" href="#" onclick="toggleTask('r-aufgabe1')">Schließen</a>
+</div>
+
+<div id="r-aufgabe2" class="task-content hidden">
+  <h3>Aufgabe 2: Hör und sprich nach</h3>
+  <p><strong>[ʃ]</strong></p>
+  <ol>
+    <li>Schuhe</li>
+    <li>Schaf</li>
+    <li>schön</li>
+    <li>Tisch</li>
+    <li>Schule</li>
+    <li>schnell</li>
+    <li>Fisch</li>
+    <li>frisch</li>
+  </ol>
+  <a class="button" href="#" onclick="toggleTask('r-aufgabe2')">Schließen</a>
+</div>
+
+<div id="r-aufgabe3" class="task-content hidden">
+  <h3>Aufgabe 3: Lies den Text laut vor und unterstreiche</h3>
+  <p>Unterstreiche alle Wörter mit [ʃ].</p><br>
+  <p><strong>Text</strong>: Die Schuhe sind schön. Das Schaf steht schnell neben dem Tisch. Der Fisch ist frisch.</p>
+  <a class="button" href="#" onclick="toggleTask('r-aufgabe3')">Schließen</a>
+</div>
+<div id="s-tasks" class="category-tasks hidden">
+  <a class="button" href="#" onclick="showCategoryList()">Zurück zu Kategorien</a>
+  <div class="task-grid">
+    <div class="task-card" onclick="toggleTask('s-aufgabe1')">
+      <h3>Aufgabe 1</h3>
+      <p>Laut unterscheiden</p>
+      <div class="progress-bar" style="width: 30%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+    <div class="task-card" onclick="toggleTask('s-aufgabe2')">
+      <h3>Aufgabe 2</h3>
+      <p>Hör und sprich nach</p>
+      <div class="progress-bar" style="width: 5%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+    <div class="task-card" onclick="toggleTask('s-aufgabe3')">
+      <h3>Aufgabe 3</h3>
+      <p>Lies den Text laut vor und unterstreiche</p>
+      <div class="progress-bar" style="width: 15%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+  </div>
+</div>
+
+<div id="s-aufgabe1" class="task-content hidden">
+  <h3>Aufgabe 1: Laut unterscheiden</h3>
+  <p>Klatsche, wenn du den Laut hörst:</p>
+  <ul>
+    <li>Klatsche einmal für [h]</li>
+    <li>Klatsche zweimal für [x]</li>
+    <li>Klatsche dreimal für [ç]</li>
+  </ul><br>
+  <p><strong>Wörter</strong>: Haus, Bach, ich, lachen, Frau Reich, deulich, richtig</p>
+  <a class="button" href="#" onclick="toggleTask('s-aufgabe1')">Schließen</a>
+</div>
+
+<div id="s-aufgabe2" class="task-content hidden">
+  <h3>Aufgabe 2: Hör und sprich nach</h3>
+  <ol>
+    <li>Haus</li>
+    <li>Bach </li>
+    <li>ich </li>
+    <li>Hut </li>
+    <li>lachen </li>
+    <li>Milch </li>
+  </ol>
+  <a class="button" href="#" onclick="toggleTask('s-aufgabe2')">Schließen</a>
+</div>
+
+<div id="s-aufgabe3" class="task-content hidden">
+  <h3>Aufgabe 3: Lies den Text laut vor und unterstreiche</h3>
+  <p>Unterstreiche alle Wörter mit den Lauten [h], [x], oder [ç].</p><br>
+  <p><strong>Text</strong>: Das Haus steht am Bach. Ich sehe den Hut. Die Milch ist frisch.</p>
+  <a class="button" href="#" onclick="toggleTask('s-aufgabe3')">Schließen</a>
+</div>
+<div id="t-tasks" class="category-tasks hidden">
+  <a class="button" href="#" onclick="showCategoryList()">Zurück zu Kategorien</a>
+  <div class="task-grid">
+    <div class="task-card" onclick="toggleTask('t-aufgabe1')">
+      <h3>Aufgabe 1</h3>
+      <p>Laut erkennen</p>
+      <div class="progress-bar" style="width: 30%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+    <div class="task-card" onclick="toggleTask('t-aufgabe2')">
+      <h3>Aufgabe 2</h3>
+      <p>Hör und sprich nach</p>
+      <div class="progress-bar" style="width: 5%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+    <div class="task-card" onclick="toggleTask('t-aufgabe3')">
+      <h3>Aufgabe 3</h3>
+      <p>Lies den Text laut vor und unterstreiche</p>
+      <div class="progress-bar" style="width: 15%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+  </div>
+</div>
+
+<div id="t-aufgabe1" class="task-content hidden">
+  <h3>Aufgabe 1: Laut erkennen</h3>
+  <p>Klatsche, wenn du den Laut [j] hörst.</p><br>
+  <p><strong>Wörter</strong>: Jahr, Junge, ja, Joghurt, gestern, Freude</p>
+  <a class="button" href="#" onclick="toggleTask('t-aufgabe1')">Schließen</a>
+</div>
+
+<div id="t-aufgabe2" class="task-content hidden">
+  <h3>Aufgabe 2: Hör und sprich nach</h3>
+  <ol>
+    <li>Jahr</li>
+    <li>Junge</li>
+    <li>ja</li>
+    <li>Joghurt</li>
+    <li>gestern</li>
+    <li>Freude</li>
+  </ol>
+  <a class="button" href="#" onclick="toggleTask('t-aufgabe2')">Schließen</a>
+</div>
+
+<div id="t-aufgabe3" class="task-content hidden">
+  <h3>Aufgabe 3: Lies den Text laut vor und unterstreiche</h3>
+  <p>Unterstreiche alle Wörter mit [j].</p><br>
+  <p><strong>Text</strong>: Das Jahr ist schön. Der Junge isst Joghurt. Gestern hatte ich Freude.</p>
+  <a class="button" href="#" onclick="toggleTask('t-aufgabe3')">Schließen</a>
+</div>
+<div id="u-tasks" class="category-tasks hidden">
+  <a class="button" href="#" onclick="showCategoryList()">Zurück zu Kategorien</a>
+  <div class="task-grid">
+    <div class="task-card" onclick="toggleTask('u-aufgabe1')">
+      <h3>Aufgabe 1</h3>
+      <p>Laut erkennen</p>
+      <div class="progress-bar" style="width: 30%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+    <div class="task-card" onclick="toggleTask('u-aufgabe2')">
+      <h3>Aufgabe 2</h3>
+      <p>Hör und sprich nach</p>
+      <div class="progress-bar" style="width: 5%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+    <div class="task-card" onclick="toggleTask('u-aufgabe3')">
+      <h3>Aufgabe 3</h3>
+      <p>Lies den Text laut vor und unterstreiche</p>
+      <div class="progress-bar" style="width: 15%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+  </div>
+</div>
+
+<div id="u-aufgabe1" class="task-content hidden">
+  <h3>Aufgabe 1: Laut erkennen</h3>
+  <p>Klatsche, wenn du den Laut [ʒ] hörst.</p><br>
+  <p><strong>Wörter</strong>: Journal, Garage, Beige, Massage, Garage, Garage</p>
+  <a class="button" href="#" onclick="toggleTask('u-aufgabe1')">Schließen</a>
+</div>
+
+<div id="u-aufgabe2" class="task-content hidden">
+  <h3>Aufgabe 2: Hör und sprich nach</h3>
+  <ol>
+    <li>Journal</li>
+    <li>Garage</li>
+    <li>Beige</li>
+    <li>Massage</li>
+  </ol>
+  <a class="button" href="#" onclick="toggleTask('u-aufgabe2')">Schließen</a>
+</div>
+
+<div id="u-aufgabe3" class="task-content hidden">
+  <h3>Aufgabe 3: Lies den Text laut vor und unterstreiche</h3>
+  <p>Unterstreiche alle Wörter mit [ʒ]</p><br>
+  <p><strong>Text</strong>: Das Journal liegt auf dem Tisch. Die Garage ist groß. Die Massage war angenehm. Der Beiger Pullover ist schön.</p>
+  <a class="button" href="#" onclick="toggleTask('u-aufgabe3')">Schließen</a>
+</div>
+<div id="v-tasks" class="category-tasks hidden">
+  <a class="button" href="#" onclick="showCategoryList()">Zurück zu Kategorien</a>
+  <div class="task-grid">
+    <div class="task-card" onclick="toggleTask('v-aufgabe1')">
+      <h3>Aufgabe 1</h3>
+      <p>Laut unterscheiden</p>
+      <div class="progress-bar" style="width: 30%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+    <div class="task-card" onclick="toggleTask('v-aufgabe2')">
+      <h3>Aufgabe 2</h3>
+      <p>Hör und sprich nach</p>
+      <div class="progress-bar" style="width: 5%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+    <div class="task-card" onclick="toggleTask('v-aufgabe3')">
+      <h3>Aufgabe 3</h3>
+      <p>Lies den Text laut vor und unterstreiche</p>
+      <div class="progress-bar" style="width: 15%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+  </div>
+</div>
+
+<div id="v-aufgabe1" class="task-content hidden">
+  <h3>Aufgabe 1: Laut unterscheiden</h3>
+  <p>Klatsche, wenn du den Laut [n] hörst, stampfe, wenn du den Laut [ŋ] hörst.</p><br>
+  <p><strong>Wörter</strong>: Nase, singen, nehmen, bringen</p>
+  <a class="button" href="#" onclick="toggleTask('v-aufgabe1')">Schließen</a>
+</div>
+
+<div id="v-aufgabe2" class="task-content hidden">
+  <h3>Aufgabe 2: Hör und sprich nach</h3>
+  <ol>
+    <li>Nase</li>
+    <li>Singen</li>
+    <li>Nehmen</li>
+    <li>Bringen</li>
+ <li>kann</li>
+ <li>Ding</li>
+ <li>neben</li>
+  </ol>
+  <a class="button" href="#" onclick="toggleTask('v-aufgabe2')">Schließen</a>
+</div>
+
+<div id="v-aufgabe3" class="task-content hidden">
+  <h3>Aufgabe 3: Lies den Text laut vor und unterstreiche</h3>
+  <p>Unterstreiche alle Wörter mit [n] grün und mit [ŋ] blau.</p><br>
+  <p><strong>Text</strong>: Die Nase läuft. Ich singe ein Lied. Wir nehmen Geschenke. Sie bringen Blumen.</p>
+  <a class="button" href="#" onclick="toggleTask('v-aufgabe3')">Schließen</a>
+</div>
+<div id="w-tasks" class="category-tasks hidden">
+  <a class="button" href="#" onclick="showCategoryList()">Zurück zu Kategorien</a>
+  <div class="task-grid">
+    <div class="task-card" onclick="toggleTask('w-aufgabe1')">
+      <h3>Aufgabe 1</h3>
+      <p>Laut erkennen</p>
+      <div class="progress-bar" style="width: 30%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+    <div class="task-card" onclick="toggleTask('w-aufgabe2')">
+      <h3>Aufgabe 2</h3>
+      <p>Hör und sprich nach</p>
+      <div class="progress-bar" style="width: 5%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+    <div class="task-card" onclick="toggleTask('w-aufgabe3')">
+      <h3>Aufgabe 3</h3>
+      <p>Lies den Text laut vor und unterstreiche</p>
+      <div class="progress-bar" style="width: 15%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+  </div>
+</div>
+
+<div id="w-aufgabe1" class="task-content hidden">
+  <h3>Aufgabe 1: Laut erkennen</h3>
+  <p>Klatsche, wenn du den Laut [tsi̯oːn] hörst.</p><br>
+  <p><strong>Wörter</strong>: Nation, Position, Emotion, Aktion, Tradition</p>
+  <a class="button" href="#" onclick="toggleTask('w-aufgabe1')">Schließen</a>
+</div>
+
+<div id="w-aufgabe2" class="task-content hidden">
+  <h3>Aufgabe 2: Hör und sprich nach</h3>
+  <ol>
+    <li>Nation</li>
+    <li>Position</li>
+    <li>Emotion</li>
+    <li>Aktion</li>
+    <li>Tradition</li>
+  </ol>
+  <a class="button" href="#" onclick="toggleTask('w-aufgabe2')">Schließen</a>
+</div>
+
+<div id="w-aufgabe3" class="task-content hidden">
+  <h3>Aufgabe 3: Lies den Text laut vor und unterstreiche</h3>
+  <p>Unterstreiche alle Wörter mit dem Laut [tsi̯oːn].</p><br>
+  <p><strong>Text</strong>: Die Nation feiert ihre Tradition. Die Position ist klar. Emotionen sind wichtig bei jeder Aktion.</p>
+  <a class="button" href="#" onclick="toggleTask('w-aufgabe3')">Schließen</a>
+</div>
+<div id="x-tasks" class="category-tasks hidden">
+  <a class="button" href="#" onclick="showCategoryList()">Zurück zu Kategorien</a>
+  <div class="task-grid">
+    <div class="task-card" onclick="toggleTask('x-aufgabe1')">
+      <h3>Aufgabe 1</h3>
+      <p>Laut erkennen</p>
+      <div class="progress-bar" style="width: 30%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+    <div class="task-card" onclick="toggleTask('x-aufgabe2')">
+      <h3>Aufgabe 2</h3>
+      <p>Hör und sprich nach</p>
+      <div class="progress-bar" style="width: 5%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+    <div class="task-card" onclick="toggleTask('x-aufgabe3')">
+      <h3>Aufgabe 3</h3>
+      <p>Lies den Text laut vor und unterstreiche</p>
+      <div class="progress-bar" style="width: 15%; background: var(--accent); height: 4px; margin-top: 1rem;"></div>
+    </div>
+  </div>
+</div>
+
+<div id="x-aufgabe1" class="task-content hidden">
+  <h3>Aufgabe 1: Laut erkennen</h3>
+  <p>Klatsche, wenn du den Laut [kv] hörst.</p><br>
+  <p><strong>Wörter</strong>: Quadrat, Qual, Qualität, Quiz, Quark</p>
+  <a class="button" href="#" onclick="toggleTask('x-aufgabe1')">Schließen</a>
+</div>
+
+<div id="x-aufgabe2" class="task-content hidden">
+  <h3>Aufgabe 2: Hör und sprich nach</h3>
+  <ol>
+    <li>Quadrat</li>
+    <li>Qual</li>
+    <li>Qualität</li>
+    <li>Quiz</li>
+    <li>Quark</li>
+  </ol>
+  <a class="button" href="#" onclick="toggleTask('x-aufgabe2')">Schließen</a>
+</div>
+
+<div id="x-aufgabe3" class="task-content hidden">
+  <h3>Aufgabe 3: Lies den Text laut vor und unterstreiche</h3>
+  <p>Unterstreiche alle Wörter mit dem Laut [kv]</p><br>
+  <p><strong>Text</strong>: Das Quadrat ist eine Form. Die Qualität ist hoch. Das Quiz war schwer. Ich esse gern Quark bei der Qual.</p>
+  <a class="button" href="#" onclick="toggleTask('x-aufgabe3')">Schließen</a>
+</div>
+        </section>
+    </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

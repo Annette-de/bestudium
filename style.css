@@ -1,0 +1,326 @@
+:root {
+    --primary: #0A0A0A;
+    --accent: #E63946;
+    --background: #FFFFFF;
+    --text: #1D1D1F;
+    --geometry: rgba(230,57,70,0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.hero {
+    text-align: center;
+    padding: 11rem;
+    position: relative;
+    background: url(https://images.wallpaperscraft.com/image/single/berlin_cathedral_cathedral_river_924833_1920x1080.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    margin-bottom: 0 px;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(8px) brightness(1.1);
+    z-index: 0;
+}
+
+.hero > .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 4.5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.03em;
+    font-weight: 700;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgba(255,255,255,0.9);
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    padding: 8rem 0 4rem;
+    position: relative;
+    z-index: 2;
+}
+
+.feature-card {
+    background: rgba(255,255,255,0.95);
+    padding: 3rem;
+    border-radius: 24px;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+    cursor: pointer;
+    border: 1px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(12px);
+    transform-style: preserve-3d;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 24px 60px rgba(0,0,0,0.12);
+}
+
+.feature-card i {
+    font-size: 3rem;
+    color: var(--accent);
+    margin-bottom: 2rem;
+    transition: transform 0.3s;
+}
+
+.feature-card:hover i {
+    transform: rotate(15deg);
+}
+
+.section {
+    padding: 6rem 0;
+    background: white;
+    margin: 6rem 0;
+    border-radius: 32px;
+    box-shadow: 0 24px 80px rgba(0,0,0,0.06);
+    animation: fadeIn 0.6s ease;
+    position: relative;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.section::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 4px;
+    background: var(--accent);
+    border-radius: 2px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+table {
+    width: 100%;
+    margin: 3rem auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.06);
+}
+
+th, td {
+    padding: 1.5rem 2rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+th {
+    background: var(--primary);
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: var(--accent);
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.4s;
+    font-weight: 600;
+    border: 2px solid transparent;
+    font-size: 0.9em;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: transparent;
+    color: var(--accent);
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.task-content {
+    padding: 3rem;
+    background: rgba(250,250,250,0.6);
+    border-radius: 24px;
+    margin: 3rem 0;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.4);
+    display: none;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.4s ease;
+}
+
+.visible {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+
+.category-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.category-card {
+    padding: 2rem;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    transition: all 0.3s;
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.1);
+}
+
+.task-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.task-card {
+    padding: 2rem;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    transition: all 0.3s;
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.task-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.1);
+}
+
+.category-tasks {
+    margin-top: 2rem;
+    display: none;
+}
+
+.category-tasks .button {
+    margin-bottom: 2rem;
+}
+
+.videos-section {
+    padding: 2rem 0;
+}
+
+.video-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.category {
+    flex: 1 1 200px;
+}
+
+.category h2 {
+    margin-bottom: 0.5rem;
+}
+
+.category button {
+    background: #eee;
+    border: none;
+    border-radius: 5px;
+    padding: 0.4rem 0.7rem;
+    margin: 0.2rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.category button:hover {
+    background: #ddd;
+}
+
+.dual-video-wrapper {
+    display: none;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.dual-video-wrapper video {
+    max-width: 45%;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 24px;
+    }
+    
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+    
+    .features {
+        grid-template-columns: 1fr;
+    }
+}
