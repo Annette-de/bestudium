@@ -64,7 +64,7 @@ function toggleTask(taskId) {
 }
 
 function toggleSubgroup(subgroupId) {
-    const mainGroups = document.getElementById('uebungen-groups');
+    const mainGroups = document.getElementById('uebungen');
     const currentSubgroup = document.getElementById(`${subgroupId}-subgroup`);
     const isAlreadyVisible = currentSubgroup.classList.contains('visible');
 
